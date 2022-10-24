@@ -1,6 +1,21 @@
 extends ../layouts/default
+include ../../components/heading-page/heading-page
+include ../../components/breadcrumbs/breadcrumbs
 
 block variables
 
 block content
-  h1 Главная страница 2
+  .page
+    .page__container
+      .page__heading-page
+        +heading-page({
+          text: "Монтаж дымоходов",
+        })
+      .page__breadcrumbs
+        +breadcrumbs({
+          breadcrumbsList: [
+            {href: "#", text: "Главная"},
+            {href: "#", text: "Монтаж дымоходов", isActive: "breadcrumbs__link_active"},
+          ]
+        })
+

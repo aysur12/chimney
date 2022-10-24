@@ -1,1 +1,37 @@
+.header {
+  width: 100%;
+  max-width: 1920px;
 
+  &__container {
+    display: flex;
+    align-items: center;
+    max-width: 1792px;
+    margin: 0 auto;
+    padding-top: 1.625em;
+  }
+
+  &__logo {
+    margin-right: 3.25em;
+  }
+
+  &__burger {
+    margin-right: 1.938em;
+  }
+
+  &__nav {
+    margin-right: 6em;
+  }
+
+  &__tel {
+    margin-right: 3.938em;
+  }
+
+  &__social-links {
+    margin-right: 60px;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 1em;
+  }
+}

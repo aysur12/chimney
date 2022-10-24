@@ -1,0 +1,15 @@
+.nav-item {
+
+  &__link {
+    color: $nav-link-color;
+    font: 700 1rem/1.44 $main-font-family;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      color: $main-text-color;
+      font-weight: 700;
+    }
+  }
+
+}

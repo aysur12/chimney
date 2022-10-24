@@ -1,0 +1,23 @@
+mixin social-links(params = {})
+  -
+    const {
+      socialLinks = [],
+      forFooter = false,
+      forConsultation = false,
+    } = params;
+
+    const socialLinkFooter = forFooter ? "social-links__link_footer" : "";
+    const socialLinkConsultation = forConsultation ? "social-links__link_consultation" : "";
+
+  .social-links
+    each link in socialLinks
+      a.social-links__link(
+        class= `social-links__link_${link.modHeader} ${socialLinkFooter} ${socialLinkConsultation}`,
+        href= link.href,
+        target= "_blank",
+        rel= "noopener noreferrer"
+        )
+        img.social-links__img(
+          src= link.imgSrc
+          alt= link.name,
+        )

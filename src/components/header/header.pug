@@ -1,0 +1,68 @@
+include ../../components/logo/logo
+include ../../components/nav/nav
+include ../../components/tel/tel
+include ../../components/social-links/social-links
+include ../../components/search/search
+include ../../components/heart/heart
+include ../../components/cart/cart
+include ../../components/burger/burger
+
+header.header
+  .header__container
+    .header__logo
+      +logo
+    .header__burger
+      +burger
+    .header__nav
+      +nav({
+        navItems: [
+          { navItemName: "Каталог товаров", href: "/mock-address/change-me"},
+          { navItemName: "Доставка и оплата", href: "/mock-address/change-me"},
+          { navItemName: "Цены", href: "/mock-address/change-me"},
+          { navItemName: "Контакты", href: "/mock-address/change-me"},
+        ],
+      })
+    .header__tel
+      +tel({
+        href: "tel:+7(812)5092198",
+        telNumber: "+7 (812) 509 21 98",
+        telText: "Перезвоните мне",
+      })
+    .header__social-links
+      +social-links({
+        forFooter: false,
+        forConsultation: false,
+        socialLinks: [
+          {
+            name: "VK",
+            href: "/mock-address/change-me",
+            imgSrc: "../../assets/images/vk.svg",
+            modHeader: "vk",
+          },
+          {
+            name: "Telegram",
+            href: "/mock-address/change-me",
+            imgSrc: "../../assets/images/telegram.svg",
+            modHeader: "telegram",
+          },
+          {
+            name: "Instagram",
+            href: "/mock-address/change-me",
+            imgSrc: "../../assets/images/instagram.svg",
+            modHeader: "instagram",
+          },
+          {
+            name: "WhatsApp",
+            href: "/mock-address/change-me",
+            imgSrc: "../../assets/images/whatsapp.svg",
+            modHeader: "whatsapp",
+          },
+        ]
+      })
+    .header__icons
+      .header__search
+        +search
+      .header__heart
+        +heart
+      .header__cart
+        +cart

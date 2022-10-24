@@ -1,0 +1,26 @@
+.cart {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.625em;
+  height: 3.5em;
+  border: 1px solid $icon-border-color;
+  border-radius: 50%;
+  text-decoration: none;
+
+  &__icon {
+    width: 1.438em;
+  }
+
+  &__count {
+    position: absolute;
+    bottom: 2.636em;
+    left: 3.091em;
+    padding: 3px 4px 5px 4px;
+    color: $cart-count-color;
+    background-color: $second-text-color;
+    font: 800 0.688em $second-font-family;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,9 @@
+mixin nav-item(params = {})
+  -
+    const {
+      navItemName = "",
+      href = "",
+    } = params;
+
+  .nav-item
+    a.nav-item__link(href= href, title= navItemName)= navItemName

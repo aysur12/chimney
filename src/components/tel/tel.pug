@@ -1,0 +1,13 @@
+mixin tel(params = {})
+  -
+    const {
+      href = "",
+      telNumber = "",
+      telText= "",
+    } = params;
+
+  .tel
+    .tel__link-block
+      a.tel__link(href= href)= telNumber
+    .tel__text
+      a.tel__link(class="tel__link_text" href= href)= telText
