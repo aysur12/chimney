@@ -1,0 +1,18 @@
+.social-links {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    &_vk {
+      margin-right: 0.75em;
+    }
+
+    &_telegram {
+      margin-right: 1em;
+    }
+
+    &_instagram {
+      margin-right: 1.125em;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.tel {
+  display: flex;
+  justify-content: space-between;
+  gap: 4.688em;
+
+  &__link {
+    color: $nav-link-color;
+    font: 400 1rem/1.25 $main-font-family;
+    text-decoration: none;
+    letter-spacing: 0.08em;
+
+    &:hover {
+      color: $main-text-color;
+      font-weight: 700;
+    }
+
+    &_text {
+      color: $tel-text-color;
+      font: 700 0.875rem/1.21 $main-font-family;
+      text-transform: uppercase;
+      letter-spacing: 0.1px;
+    }
+  }
+
+  &__text {
+    border-bottom: 1px dashed $tel-text-color;
+  }
+}

@@ -1,0 +1,9 @@
+mixin breadcrumbs(params = {})
+  -
+    const {
+      breadcrumbsList= [], 
+    } = params;
+  ul.breadcrumbs
+    each link in breadcrumbsList
+      li.breadcrumbs__item
+        a.breadcrumbs__link(class=link.isActive, href= link.href)= link.text

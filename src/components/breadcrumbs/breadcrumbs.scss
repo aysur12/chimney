@@ -1,0 +1,28 @@
+.breadcrumbs {
+  margin: 0;
+  padding: 10px 0 15px;
+  border-top: 1px solid $icon-border-color;
+  border-bottom: 1px solid $icon-border-color;
+  list-style-type: none;
+
+  &__item {
+    display: inline;
+
+    & + &::before {
+      padding: 6px;
+      color: $nav-link-color;
+      content: "\203A";
+    }
+  }
+
+  &__link {
+    color: $breadcrumbs-color;
+    font: 400 0.75em/1.25em $main-font-family;
+    text-decoration: none;
+
+    &_active,
+    &:hover {
+      color: $nav-link-color;
+    }
+  }
+}

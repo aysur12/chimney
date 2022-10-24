@@ -1,0 +1,19 @@
+.heart {
+  width: 56px;
+  height: 56px;
+  background-color: transparent;
+  background-image: url(../../assets/images/heart.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid $icon-border-color;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &_color {
+    background-image: url(../../assets/images/heart-color.png);
+  }
+
+  &__icon {
+    padding: 1em;
+  }
+}

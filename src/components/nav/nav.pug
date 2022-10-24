@@ -1,0 +1,16 @@
+include ../../components/nav-item/nav-item
+
+mixin nav(params = {})
+  -
+    const {
+      navItems = [],
+    } = params;
+
+  nav.nav
+    ul.nav__list
+      each item in navItems
+        li.nav__item
+          +nav-item({
+            navItemName: item.navItemName,
+            href: item.href,
+          })
