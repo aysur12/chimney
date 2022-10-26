@@ -1,0 +1,20 @@
+mixin benefits(params = {})
+  -
+    const {
+      headingSmall = "",
+      headingBig = "",
+      advantagesList = [],
+    } = params;
+
+  .benefits
+    .benefits__info
+      h2.benefits__heading
+        span.benefits__heading-span(class="benefits__heading-span_small")= headingSmall
+        span.benefits__heading-span(class="benefits__heading-span_big")= headingBig
+      ul.benefits__list
+        each advantage in advantagesList
+          li.benefits__item
+            .benefits__icon-block
+            p.benefits__item-text= advantage.text
+    .benefits__img-block
+      img.benefits__img(src="../../assets/images/advantage-bg.png", alt="Дымоход")

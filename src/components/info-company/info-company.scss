@@ -1,0 +1,10 @@
+.info-company {
+  width: 100%;
+  margin: 0;
+  @include font-par;
+
+  & > span {
+    color: $second-text-color;
+    font-weight: 600;
+  }
+}

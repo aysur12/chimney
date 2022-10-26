@@ -1,0 +1,32 @@
+mixin consultation-form(params ={})
+  -
+    const {
+      headingText= "",
+      headInfoText= "",
+      textButton= "",
+    } = params;
+  
+  .consultation-form
+    .consultation-form__heading-block
+      h5.consultation-form__heading
+        != headingText
+      p.consultation-form__info= headInfoText
+    form.consultation-form__form(action="#")
+      fieldset.consultation-form__fieldset
+        label.consultation-form__label
+          input.consultation-form__input(
+            type="text",
+            name= "name",
+            placeholder= "Ваше имя",
+            pattern="[А-Яа-я]*?\s[А-Яа-я]*?",
+            required
+          )
+        label.consultation-form__label
+          input.consultation-form__input(
+            type="tel",
+            name= "phone",
+            placeholder= "Ваш телефон",
+            pattern="\+?[0-9\s\-\(\)]+",
+            required
+          )
+      button.consultation-form__button(type= "submit")= textButton

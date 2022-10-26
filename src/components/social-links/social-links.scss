@@ -5,14 +5,46 @@
   &__link {
     &_vk {
       margin-right: 0.75em;
+
+      &_cons {
+        margin-right: 2.25em;
+      }
+
+      &_footer {
+        margin-right: 2.25em;
+      }
     }
 
     &_telegram {
       margin-right: 1em;
+
+      &_cons {
+        margin-right: 2.625em;
+      }
+
+      &_footer {
+        margin-right: 2.625em;
+      }
     }
 
     &_instagram {
       margin-right: 1.125em;
+
+      &_cons {
+        margin-right: 2.75em;
+      }
+
+      &_footer {
+        margin-right: 2.75em;
+      }
+    }
+
+    &:hover .social-links__svg-path {
+      fill: $nav-link-color;
+    }
+
+    &:hover .social-links__svg-path_footer {
+      fill: $cart-count-color;
     }
   }
 }

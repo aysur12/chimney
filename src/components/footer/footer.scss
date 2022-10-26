@@ -1,0 +1,95 @@
+.footer {
+  width: 100%;
+  background-color: $bg-footer;
+
+  &__container {
+    display: flex;
+    gap: 8.188em;
+    max-width: 1219px;
+    margin: 0 auto;
+    padding: 5.5em 0 5.75em;
+  }
+
+  &__catalog-info-block {
+    display: flex;
+    gap: 6.688em;
+  }
+
+  &__catalog {
+    display: flex;
+    flex-direction: column;
+    gap: 1.125em;
+  }
+
+  &__heading {
+    margin: 0;
+    @include font-h6;
+    color: $cart-count-color;
+    text-transform: uppercase;
+  }
+
+  &__catalog-content {
+    display: flex;
+    gap: 6.063em;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.125em;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__link {
+    color: $cart-count-color;
+    font: 400 0.875em/1.21 $main-font-family;
+    text-decoration: none;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.125em;
+  }
+
+  &__info-content {
+    display: flex;
+    gap: 3.75em;
+  }
+
+  &__contacts-social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.688em;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  &__contacts-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__contacts-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__contacts-text {
+    margin: 0;
+    color: $cart-count-color;
+    font: 400 0.875rem/1.71 $second-font-family;
+  }
+
+  &__contacts-span {
+    color: $nav-link-color;
+  }
+}

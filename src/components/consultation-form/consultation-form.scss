@@ -1,0 +1,71 @@
+.consultation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  max-width: 866px;
+  padding: 3.375em 3.438em 3.813em 3.563em;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);
+
+  &__heading-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+  }
+
+  &__heading {
+    margin: 0;
+    @include font-h5;
+
+    &>span {
+      color: $marker-color;
+      font-weight: 700;
+    }
+  }
+
+  &__info {
+    margin: 0;
+    @include font-par;
+  }
+
+  &__form {
+    display: flex;
+    gap: 0.813em;
+    border: none;
+  }
+
+  &__fieldset {
+    display: flex;
+    gap: 1em;
+    padding: 0;
+    border: none;
+  }
+
+  &__input {
+    min-width: 240px;
+    padding: 1.214em;
+    color: $main-text-color;
+    font: 500 0.875rem/1.57 $main-font-family;
+    border: 1px solid $icon-border-color;
+    border-radius: 4px;
+
+    &::placeholder {
+      color: $breadcrumbs-color;
+    }
+  }
+
+  &__button {
+    min-width: 240px;
+    padding: 1.063em 0 1.188em;
+    color: $cart-count-color;
+    background-color: $bg-button;
+    font: 700 1rem/1.25 $main-font-family;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+
+    &:hover {
+      background-color: $second-text-color;
+    }
+  }
+}

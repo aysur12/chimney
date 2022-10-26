@@ -1,0 +1,10 @@
+mixin photo-works(params = {})
+  -
+    const {
+      headingText= "",
+      infoText= "",
+    } =params;
+
+  .photo-works
+    h2.photo-works__heading= headingText
+    p.photo-works__info= infoText

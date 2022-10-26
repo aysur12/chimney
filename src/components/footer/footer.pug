@@ -1,1 +1,69 @@
+include ../social-links/social-links
+
+footer.footer
+  .footer__container
+    .footer__catalog-info-block
+      .footer__catalog
+        h6.footer__heading Каталог
+        .footer__catalog-content
+          ul.footer__list.footer__list_left
+            li.footer__item
+              a.footer__link(href= "/mock-address/change-me") Дымоходы
+            li.footer__item
+              a.footer__link(href= "/mock-address/change-me") Дымососы
+            li.footer__item
+              a.footer__link(href= "/mock-address/change-me") Печи для дома
+            li.footer__item
+              a.footer__link(href= "/mock-address/change-me") Печи для бани
+          ul.footer__list.footer__list_right
+            li.footer__item
+              a.footer__link(href= "/mock-address/change-me") Камины
+            li.footer__item
+              a.footer__link(href= "/mock-address/change-me") Силикат кальция
+            li.footer__item
+              a.footer__link(href= "/mock-address/change-me") Котлы
+            li.footer__item
+              a.footer__link(href= "/mock-address/change-me") Ещё
+      .footer__info
+        h6.footer__heading Информация
+        .footer__info-content
+          ul.footer__list.footer__list_left
+            li.footer__item
+              a.footer__link(href= "/mock-address/change-me") Каталог
+            li.footer__item
+              a.footer__link(href= "/mock-address/change-me") Установка и монтаж
+            li.footer__item
+              a.footer__link(href= "/mock-address/change-me") Отзывы
+            li.footer__item
+              a.footer__link(href= "/mock-address/change-me") Ликвидация товара
+          ul.footer__list.footer__list_right
+            li.footer__item
+              a.footer__link(href= "/mock-address/change-me") Полезное
+            li.footer__item
+              a.footer__link(href= "/mock-address/change-me") Контакты
+            li.footer__item
+              a.footer__link(href= "/mock-address/change-me") Оплата и доставка
+    .footer__contacts-social-links
+      .footer__contacts
+        h6.footer__heading Время работы
+        .footer__contacts-content
+          .footer__contacts-item
+            .footer__contacts-icon
+              img(src="../../assets/images/clock.svg", alt="Watch")
+            p.footer__contacts-text
+              span.footer__contacts-span пн-пт &nbsp;
+              != '9:00 – 20:00 &nbsp;'
+              span.footer__contacts-span
+                != 'сб-вс &nbsp; &nbsp;'
+              = '10:00 – 18:00'
+          .footer__contacts-item
+            .footer__contacts-icon
+              img(src="../../assets/images/mark.svg", alt="Mark")
+            p.footer__contacts-text г. Санкт - Петербург , ул. Тамбасова д.7
+      .footer__social-links
+        +social-links({
+          forFooter: true,
+        })
+
+
 

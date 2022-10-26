@@ -1,0 +1,29 @@
+.consultation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  &__heading-block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  &__heading {
+    margin: 0;
+    text-align: center;
+    @include font-h3;
+  }
+
+  &__heading-info {
+    margin: 0;
+    text-align: center;
+    font: 300 1.375em/1.81 $main-font-family;
+  }
+
+  &__social-links {
+    display: flex;
+    margin-bottom: 2.188em;
+  }
+}

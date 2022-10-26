@@ -1,0 +1,22 @@
+include ../reasons-item/reasons-item
+
+mixin reasons(params = {})
+  -
+    const {
+      headingText= "",
+      reasonsInfoText= "",
+      reasonList= [],
+    } = params;
+
+  .reasons
+    h2.reasons__heading= headingText
+    p.reasons__info= reasonsInfoText
+    ul.reasons__list
+      each reason in reasonList
+        li.reasons__item
+          +reasons-item({
+            hrefImg: reason.hrefImg,
+            titleImg: reason.titleImg,
+            headingText: reason.headingText,
+            infoText: reason.infoText,
+          })

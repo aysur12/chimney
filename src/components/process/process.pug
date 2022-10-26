@@ -1,0 +1,14 @@
+mixin process(params = {})
+  -
+    const {
+      headingText= "",
+      processList= [],
+    } = params;
+
+  .process
+    h2.process__heading= headingText
+    ul.process__list
+      each process in processList
+        li.process__item
+          .process__number= process.number
+          p.process__text= process.text

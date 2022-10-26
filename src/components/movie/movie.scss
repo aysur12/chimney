@@ -1,0 +1,60 @@
+.movie {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__heading {
+    position: relative;
+    margin: 0;
+    margin-bottom: 1.65em;
+    padding-top: 0.4em;
+    @include font-h2;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 5px;
+      width: 74px;
+      background: $second-text-color;
+      top: 0;
+      left: -3px;
+    }
+  }
+
+  &__info {
+    margin: 0;
+    margin-bottom: 3.25em;
+    @include font-par;
+  }
+
+  &__video-block {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    height: 486px;
+    background-image: url(../../assets/images/bg-movie.png);
+  }
+
+  &__video {
+    grid-area: 1/-1;
+    padding: 2.938em 1.063em 0 0;
+    width: 100%;
+    max-width: 792px;
+  }
+
+  &__play-pause {
+    grid-area: 1/-1;
+    align-self: center;
+    justify-self: center;
+    padding: 12px 74px 0 0;
+    width: 41px;
+    height: 41px;
+    opacity: 1;
+    transition: opacity 400ms;
+
+    &[hidden] {
+      opacity: 0;
+      display: block;
+    }
+  }
+}

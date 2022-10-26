@@ -10,7 +10,8 @@
 
 @mixin font-h3 {
   color: $main-text-color;
-  font: 800 3.125rem/0.8 $main-font-family;
+  font: 800 3.125rem/1.25 $main-font-family;
+  text-transform: uppercase;
 }
 
 @mixin font-h4 {
@@ -31,4 +32,9 @@
 @mixin font-par {
   color: $main-text-color;
   font: 400 1rem/1.875 $main-font-family;
+}
+
+@mixin font-advantages-item {
+  color: $main-text-color;
+  font: 400 1rem/1.5 $main-font-family;
 }

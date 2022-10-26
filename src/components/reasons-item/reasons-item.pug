@@ -1,0 +1,19 @@
+mixin reasons-item(params = {})
+  -
+    const {
+      hrefImg= "",
+      titleImg= "",
+      headingText= "",
+      infoText= "",
+    } = params;
+
+  .reasons-item
+    .reasons-item__img-block
+      img.reasons-item__img(
+        src= hrefImg,
+        alt= titleImg
+      )
+    .reasons-item__text-block
+      h4.reasons-item__heading= headingText
+      p.reasons-item__info
+        != infoText

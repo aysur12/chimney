@@ -1,0 +1,25 @@
+include ../social-links/social-links
+include ../consultation-form/consultation-form
+
+mixin consultation(params = {})
+  -
+    const {
+      headingText= "",
+      headingInfoText= "",
+    } = params;
+
+  .consultation
+    .consultation__heading-block
+      h3.consultation__heading= headingText
+      p.consultation__heading-info= headingInfoText
+    .consultation__social-links
+      +social-links({
+        forConsultation: true,
+      })
+    .consultation__consultation-form
+      +consultation-form({
+        headingText: "Для <span>консультации</span> заполните форму!",
+        headInfoText: "С Вами свяжутся в ближайшее время",
+        textButton: "отправить"
+      })
+

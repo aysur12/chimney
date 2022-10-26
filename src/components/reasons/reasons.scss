@@ -1,0 +1,39 @@
+.reasons {
+  width: 100%;
+
+  &__heading {
+    position: relative;
+    margin: 0;
+    margin-bottom: 1.3em;
+    padding-top: 0.4em;
+    @include font-h2;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 5px;
+      width: 74px;
+      background: $second-text-color;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__info {
+    margin: 0;
+    margin-bottom: 50px;
+    @include font-par;
+  }
+
+  &__list {
+    display: flex;
+    gap: 26px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    flex-basis: 33.33%;
+  }
+}

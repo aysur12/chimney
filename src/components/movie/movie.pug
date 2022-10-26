@@ -1,0 +1,17 @@
+mixin movie(params = {})
+  -
+    const {
+      headingText= "",
+      infoText= "",
+    } = params;
+  
+  .movie
+    h2.movie__heading= headingText
+    p.movie__info= infoText
+    .movie__video-block
+      video.movie__video(
+        src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" 
+        type="video/mp4"
+      )
+      .movie__play-pause
+        img(src="../../assets/images/play.svg", alt="Play")

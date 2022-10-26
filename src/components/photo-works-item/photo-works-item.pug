@@ -1,0 +1,13 @@
+mixin photo-works-item(params ={})
+  -
+    const {
+      photoWorksItems = [],
+    } = params;
+
+  .photo-works-items
+    each photoWorksItem in photoWorksItems
+      .photo-works-items__item
+        img.photo-works-item__img(
+          src= photoWorksItem.src,
+          alt= photoWorksItem.alt,
+        )

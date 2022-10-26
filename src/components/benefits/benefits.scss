@@ -1,0 +1,69 @@
+.benefits {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2.438em;
+    max-width: 615px;
+  }
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 0;
+  }
+
+  &__heading-span {
+    &_small {
+      font: 600 2.5rem $main-font-family;
+    }
+
+    &_big {
+      color: $second-text-color;
+      font: 800 3.125rem/1.26 $main-font-family;
+      text-transform: uppercase;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    max-width: 33.688em;
+    margin: 0;
+    padding-left: 1.75em;
+    list-style-type: none;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+  }
+
+  &__icon-block {
+    width: 9px;
+    height: 9px;
+    background-image: url(../../assets/images/list-marker.svg);
+  }
+
+  &__item-text {
+    margin: 0;
+    @include font-advantages-item;
+  }
+
+  &__img-block {
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+    left: 42px;
+    top: -7px;
+  }
+}
